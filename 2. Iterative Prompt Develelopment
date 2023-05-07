@@ -11,7 +11,8 @@ In this lesson, you'll iteratively analyze and refine your prompts to generate m
       openai.api_key  = os.getenv('OPENAI_API_KEY')
 </pre>
 <pre>
-      def get_completion(prompt, model="gpt-3.5-turbo"):
+
+    def get_completion(prompt, model="gpt-3.5-turbo"):
     messages = [{"role": "user", "content": prompt}]
     response = openai.ChatCompletion.create(
         model=model,
@@ -19,9 +20,12 @@ In this lesson, you'll iteratively analyze and refine your prompts to generate m
         temperature=0, # this is the degree of randomness of the model's output
     )
     return response.choices[0].message["content"]
+    
  </pre>
 ## Generate a marketing product description from a product fact sheet
- <pre>    fact_sheet_chair = """
+ <pre> 
+ 
+ fact_sheet_chair = """
             OVERVIEW
             - Part of a beautiful family of mid-century inspired office furniture, 
             including filing cabinets, desks, bookcases, meeting tables, and more.
@@ -61,5 +65,6 @@ In this lesson, you'll iteratively analyze and refine your prompts to generate m
             COUNTRY OF ORIGIN
             - Italy
             """
+            
     </pre>        
 
