@@ -21,7 +21,7 @@ In this lesson, you'll iteratively analyze and refine your prompts to generate m
     return response.choices[0].message["content"]
  </pre>
 ## Generate a marketing product description from a product fact sheet
- In [ ]:    fact_sheet_chair = """
+ <pre>    fact_sheet_chair = """
             OVERVIEW
             - Part of a beautiful family of mid-century inspired office furniture, 
             including filing cabinets, desks, bookcases, meeting tables, and more.
@@ -61,4 +61,5 @@ In this lesson, you'll iteratively analyze and refine your prompts to generate m
             COUNTRY OF ORIGIN
             - Italy
             """
+    </pre>        
 
