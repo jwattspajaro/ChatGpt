@@ -9,7 +9,8 @@ In this lesson, you'll iteratively analyze and refine your prompts to generate m
       _ = load_dotenv(find_dotenv()) # read local .env file
 
       openai.api_key  = os.getenv('OPENAI_API_KEY')
- </pre>
+</pre>
+
 <pre>
       def get_completion(prompt, model="gpt-3.5-turbo"):
     messages = [{"role": "user", "content": prompt}]
